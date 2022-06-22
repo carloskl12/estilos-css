@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+body h1 {
+    color: black;
+    font-size: 2em;
+    background-color: rgb(198, 215, 252);
+    margin: auto;
+    text-align: center;
+}
+
+body div.normalTxt{
+    margin: auto 40px auto 40px;
+    background-color: rgb(28, 85, 136);
+}
