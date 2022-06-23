@@ -12,5 +12,17 @@ body h1 {
 
 body div.normalTxt{
     margin: auto 40px auto 40px;
-    background-color: rgb(28, 85, 136);
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: rgb(198, 215, 252);
+    padding: 10px;
+    color: rgb(106, 110, 129);
+    text-align: center;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
 }
