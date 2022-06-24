@@ -10,7 +10,7 @@
     <h2 >Estilo normal</h2>
     <p>Esto es un texto normal redactado dentro de un div con la clase "normal".</p>
 
-    <h2>Tablas</h2>
+    <h3>Tablas</h3>
     <p>A continuación la misma tabla con diferentes estilos contenidos en un div que organiza su 
         contenido de forma horizontal:
     </p>
@@ -46,6 +46,67 @@
             </tbody>
         </table>
     </div>
+
+    <h3>Formularios</h3>
+    <p>Para un formulario se debe indicar la clase "normal" en la etiqueta form 
+        que contiene las diferentes entradas.
+    </p>
+    <div class="horizontalDispose">
+        <form class="normal">
+            <label for="firstname">Nombres</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Sus nombres">
+            <label for="lastname">Apellidos</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Sus apellidos">
+            <label for="country">País</label>
+            <select id="country" name="country">
+                <option value="" disabled selected="selected">País de origen</option>
+                <option value="0">Australia</option>
+                <option value="1">Canada</option>
+                <option value="2">Colombia</option>
+                <option value="3">USA</option>
+            </select>
+            <label for="userPw">Contraseña</label>
+            <input type="password" id="userPw" name="userPw" 
+            class="logInput" placeholder="Contraseña***">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <p> Ahora se presenta un formulario compacto para procesar un archivo csv </p>
+    <form class="normal-process-file">
+        <div class="file-button"> Seleccionar archivo <input type="file" id="myfile"  name="myfile"> </div>
+        <select id="sep-col" name="sep-col">
+            <option value="" disabled selected="selected">Separador columnas</option>
+            <option value=",">Coma (,)</option>
+            <option value="\t">Tabulador</option>
+            <option value="|">Barra vertical (|)</option>
+        </select>
+        <input type="submit" value="Procesar">
+    </form>
+    <p>Como complemento, tambien se puede requerir una barra para 
+        acceder a la información procesada. Siguiendo con el ejemplo se presentan 
+        dos formas: copiando al portapeles, o guardando el archivo.
+    </p>
+    <div class="normal-process-file">
+        <select id="sep-col-save" name="sep-col-save">
+            <option value="" disabled selected="selected">Separador columnas</option>
+            <option value=",">Coma (,)</option>
+            <option value="\t">Tabulador</option>
+            <option value="|">Barra vertical (|)</option>
+        </select>
+        <button onclick="console.log('Copiar a portapeles')">Copiar a portapeles</button>
+        <button onclick="console.log('Información guardada')">Guardar</button>
+    </div>
+    <p>Es importante anotar que cuando se crea un formulario en sentido estricto, se 
+        envía la información al servidor, haciendo que la página se cargue otra vez cuando 
+        se da un evento de botón. Por lo tanto, en el caso de solo realizar acciones
+        en la página, los elementos deben estar contenidos en un div con la 
+        clase "normal-process-file".
+    </p>
+    <p>En los dos ejemplos anteriores, en el primero la página se recarga una vez se activa 
+        el botón procesar, en cambio en el segundo caso, cuando se activa el botón 
+        "Copiar a portapeles" o "Guardar" no se recarga la página.
+    </p>
 </div>
 
 <footer class="normal-title-color">

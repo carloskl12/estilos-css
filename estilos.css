@@ -24,12 +24,18 @@ body h1 {
 div.normal h2, div.normal h3 {
     color: rgb(93, 120, 255);
 }
-body div.normal{
-    /* margin: auto 40px auto 40px; */
+
+div.normal{
     width: 80%;
     background-color: rgb(255, 255, 255);
     margin: auto;
 }
+
+.normal p {
+    text-align: justify;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Tablas  */
 table.normal {
     padding: 0;
     border-collapse: collapse;
@@ -49,7 +55,8 @@ table.normal th{
     background-color: rgb(93, 120, 255);
 }
 
-
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Pie de página  */
 footer {
     padding: 10px;
     text-align: center;
@@ -70,9 +77,125 @@ footer a:hover {
 footer a:visited{
     color: rgb(252, 252, 252);
 }
-
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Cajas  */
 div.horizontalDispose {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Formularios  estilo normal*/
+form.normal {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 7px;
+}
+form.normal input[type=text], form.normal select, 
+form.normal input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+
+  form.normal input[type=submit] {
+    width: 100%;
+    background-color: rgb(93, 120, 255);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }  
+
+  form.normal input[type=submit]:hover {
+    background-color: rgb(84, 108, 230);
+  }
+
+  /* normal-process-file */
+
+.normal-process-file {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 7px;
+    width: auto;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+}
+
+.normal-process-file  * {
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.normal-process-file input[type=text], .normal-process-file select, 
+.normal-process-file input[type=password]{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+.normal-process-file input[type=submit] ,
+.normal-process-file button{
+    border: 1px solid rgb(84, 108, 230);
+    color: rgb(84, 108, 230);
+    background-color: white;
+    margin: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }  
+
+
+.normal-process-file input[type=submit]:hover ,
+.normal-process-file button:hover,
+.normal-process-file div.file-button:hover{
+    background-color: rgb(93, 120, 255);
+    color: white;
+}
+/* oculta el boton y hace que ocupe todo el espacio */
+  .normal-process-file input[type=file]{
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    /* el margen izquierdo tiene que ver con el padding izquierdo del div del botón */
+    left: -5px;
+    top:0;
+    /* cursor: pointer; */
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    background-color: rgb(119, 7, 95);
+    padding: 0;
+    border-radius: 4px;
+    /* float: left; */
+  }
+
+  .normal-process-file div.file-button {
+    color: rgb(84, 108, 230);
+    background-color: white;
+    border:1px solid rgb(93, 120, 255);
+    padding:5px 10px;
+    position:relative;
+    border-radius:4px;
+    text-align:center;
+    
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* float:left;  */
+    display: inline-block;
+    /* margin-top: 5px; */
+    /* cursor: pointer; */
+}
+
+
