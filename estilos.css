@@ -16,7 +16,7 @@ body {
 
 body h1 {
     width: 100%;
-    font-size: 2em;
+    font-size: 2rem;
     margin: auto;
     text-align: center;
     border-radius: 7px;
@@ -44,7 +44,8 @@ div.normal{
 }
 
 .normal p {
-    text-align: justify;
+    text-align: left;
+
 }
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* Tablas  */
@@ -52,6 +53,7 @@ table.normal {
     padding: 0;
     border-collapse: collapse;
     margin: auto;
+    font-size: 1em;
 
 }
 table.normal td, table.normal th{
