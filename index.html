@@ -73,6 +73,7 @@
     </div>
 
     <p> Ahora se presenta un formulario compacto para procesar un archivo csv </p>
+    <div class="horizontal-csv-buttons"> 
     <form class="normal-process-file">
         <div class="file-button"> Seleccionar archivo <input type="file" id="myfile"  name="myfile"> </div>
         <select id="sep-col" name="sep-col">
@@ -83,10 +84,12 @@
         </select>
         <input type="submit" value="Procesar">
     </form>
+    </div>
     <p>Como complemento, tambien se puede requerir una barra para 
         acceder a la información procesada. Siguiendo con el ejemplo se presentan 
         dos formas: copiando al portapeles, o guardando el archivo.
     </p>
+    <div class="horizontal-csv-buttons">
     <div class="normal-process-file">
         <select id="sep-col-save" name="sep-col-save">
             <option value="" disabled selected="selected">Separador columnas</option>
@@ -96,6 +99,7 @@
         </select>
         <button onclick="console.log('Copiar a portapeles')">Copiar a portapeles</button>
         <button onclick="console.log('Información guardada')">Guardar</button>
+    </div>
     </div>
     <p>Es importante anotar que cuando se crea un formulario en sentido estricto, se 
         envía la información al servidor, haciendo que la página se cargue otra vez cuando 

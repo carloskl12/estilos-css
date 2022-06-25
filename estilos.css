@@ -26,9 +26,21 @@ div.normal h2, div.normal h3 {
 }
 
 div.normal{
-    width: 80%;
+    width: 800px;
     background-color: rgb(255, 255, 255);
     margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    div.normal {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.normal {
+      width: 500px;
+    }
 }
 
 .normal p {
@@ -40,6 +52,7 @@ table.normal {
     padding: 0;
     border-collapse: collapse;
     margin: auto;
+
 }
 table.normal td, table.normal th{
     margin: 0;
@@ -62,6 +75,7 @@ footer {
     text-align: center;
     border-radius: 7px;
     margin-top: 15px;
+    font-weight: bold;
 }
 
 footer a {
@@ -84,6 +98,12 @@ div.horizontalDispose {
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+div.horizontal-csv-buttons{
+    width: 420px;
+    margin: auto;
+}
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* Formularios  estilo normal*/
 form.normal {
@@ -126,9 +146,9 @@ form.normal input[type=password]{
     padding: 10px;
     border-radius: 7px;
     width: auto;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-wrap: nowrap; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .normal-process-file  * {
@@ -150,7 +170,6 @@ form.normal input[type=password]{
     border: 1px solid rgb(84, 108, 230);
     color: rgb(84, 108, 230);
     background-color: white;
-    margin: 0px 5px;
     border-radius: 4px;
     cursor: pointer;
   }  
@@ -170,32 +189,24 @@ form.normal input[type=password]{
     /* el margen izquierdo tiene que ver con el padding izquierdo del div del botón */
     left: -5px;
     top:0;
-    /* cursor: pointer; */
     height: 100%;
     font-size: 12px;
     width: 100%;
     background-color: rgb(119, 7, 95);
     padding: 0;
     border-radius: 4px;
-    /* float: left; */
-  }
+}
 
   .normal-process-file div.file-button {
     color: rgb(84, 108, 230);
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border:1px solid rgb(93, 120, 255);
     padding:5px 10px;
     position:relative;
     border-radius:4px;
-    text-align:center;
-    
+    text-align:center;    
     font-size: 14px;
-    margin-top: auto;
-    margin-bottom: auto;
-    /* float:left;  */
     display: inline-block;
-    /* margin-top: 5px; */
-    /* cursor: pointer; */
 }
 
 
